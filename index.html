@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/styles/main.css"> -->
+    <link rel="stylesheet" href="/styles/phone.css">
+    <script src="/scripts/phone.js"></script>
+
+</head>
+<body onload="display_ct();">
+
+
+    
+    <div class="container">
+        <div class="iphone">
+        <div class="buttons">
+            <div class="silent"></div>
+            <div class="sleep"></div>
+            <div class="vol-up"></div>
+            <div class="vol-down"></div>
+        </div>
+        <div class="top">
+            <div class="black-bar"></div>
+            <div class="iphone-top"></div>
+        </div>
+        <div class="components">
+            <div class="speaker"></div>
+            <div class="camera">
+            <div class="shine-left"></div>
+            <div class="shine-right"></div>
+            </div>
+        </div>
+        <div class="top-bar"></div>
+        <div class="bottom-bar"></div>
+        <div class="screen">
+            <video loop="loop" autoplay="autoplay" muted="muted">
+                <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1116884/iphone-vid.mp4" type="video/mp4"/>
+            </video>
+            <ul>
+                <li class="own">Lorem ipsum zudbozdvubzdb dz dzoj zdzjd zdzd</li>
+                <li>Je m'appelle bartholomé enchanté</li>
+                <li class="own">Et moi c'est lucien mec</li>
+                <li>Ceci est un test</li>
+            </ul>
+            <!-- <div class="service">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <div class="battery">
+                <div class="nub"></div>
+                <div class="energy"></div>
+            </div>
+                <div class="lock-carrier">AT&T</div>
+                <div class="lock-lock"></div>
+                <div class="info">
+                <div class="lock-time"> </div>
+                <div class="lock-date"> </div>
+            </div> -->
+            <div class="lock-bar"></div>
+        </div>
+        </div>
+    </div>
+    <!-- goo filter for notch shape-->
+    <svg viewbox="0 0 0 0" height="0" width="0">
+        <filter id="goo" color-interpolation-filters="sRGB">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 8 -1" result="cm"></feColorMatrix>
+        <feBlend in="sourceGraphic" in2="cm" mode="multiply"></feBlend>
+        </filter>
+    </svg>
+
+
+    <div id="content">
+        <div class="layer mountain one"></div>
+        <div class="layer cloud one"><img src="https://anaislab.com/tutoriales/img/cloud1.png" alt=""></div>
+        <div class="layer mountain two"></div>
+        <div class="layer mountain three"></div>
+        <div class="layer cloud two"><img src="https://anaislab.com/tutoriales/img/cloud1.png" alt=""></div>
+        <div class="layer cloud three"><img src="https://anaislab.com/tutoriales/img/cloud1.png" alt=""></div>
+      </div>
+    
+</body>
+</html>
