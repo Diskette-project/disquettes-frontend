@@ -18,25 +18,22 @@
 
 	transform: scale(0.7) rotate(15deg);
 
-	transition: 0.3s ease-in-out;
+	/* transition: 0.3s ease-in-out; */
 
 	animation: 
-		slide-in 0.4s linear
+		/* slide-in .5s linear */
 		/* 3s float 0.4s linear infinite; */
 }
 
 @keyframes slide-in {
 
 	0% {
-		transform: translateY(50%) scale(0.3) rotate(45deg);
+		transform: translateY(-50%) translateX(50%) scale(0.3) rotate(15deg);
 	}
 
-	/* 80% {
-		transform: translateY(-5%) scale(0.8) rotate(13deg);
-	} */
 
 	100% {
-		transform: translateY(0) scale(0.7) rotate(15deg);
+		transform: translateY(0) translateX(0) scale(0.7) rotate(15deg);
 	}
 }
 
